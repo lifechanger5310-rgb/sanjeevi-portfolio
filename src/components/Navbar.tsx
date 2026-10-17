@@ -45,7 +45,7 @@ export default function Navbar() {
       >
         <a
           href="#"
-          className="flex items-center gap-2 font-mono text-sm font-medium tracking-tight"
+          className="flex min-h-[44px] items-center gap-2 font-mono text-sm font-medium tracking-tight"
           onClick={() => setOpen(false)}
         >
           <span
@@ -60,7 +60,7 @@ export default function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="rounded-md px-3 py-2 text-sm text-muted transition-colors hover:text-foreground"
+                className="inline-flex min-h-[44px] items-center rounded-md px-3 text-sm text-muted transition-colors hover:text-foreground"
               >
                 {l.label}
               </a>
@@ -71,7 +71,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <a
             href="#contact"
-            className="rounded-full bg-emerald px-4 py-2 text-sm font-semibold text-background transition-opacity hover:opacity-90"
+            className="inline-flex min-h-[44px] items-center rounded-full bg-emerald px-4 text-sm font-semibold text-background transition-opacity hover:opacity-90"
           >
             Hire / Contact
           </a>
@@ -81,7 +81,7 @@ export default function Navbar() {
             aria-expanded={open}
             aria-controls="mobile-menu"
             onClick={() => setOpen((v) => !v)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-line bg-surface text-foreground md:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-md border border-line bg-surface text-foreground md:hidden"
           >
             {open ? <X size={18} /> : <Menu size={18} />}
           </button>

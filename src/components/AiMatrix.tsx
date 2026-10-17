@@ -308,7 +308,7 @@ export default function AiMatrix() {
                   setFocus(null);
                 }}
                 className={cn(
-                  "rounded-full border px-4 py-2 text-sm transition-colors",
+                  "min-h-[44px] rounded-full border px-4 text-sm transition-colors",
                   on
                     ? "border-emerald bg-emerald/10 text-emerald"
                     : "border-line bg-background text-muted hover:text-foreground",

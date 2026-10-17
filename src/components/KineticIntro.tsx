@@ -129,7 +129,7 @@ export default function KineticIntro() {
       <button
         type="button"
         onClick={() => skipRef.current?.()}
-        className="absolute right-6 top-6 z-10 rounded-full border border-line bg-surface px-3 py-1.5 font-mono text-xs text-muted transition-colors hover:text-foreground"
+        className="absolute right-6 top-6 z-10 inline-flex min-h-[44px] items-center rounded-full border border-line bg-surface px-4 font-mono text-xs text-muted transition-colors hover:text-foreground"
       >
         Skip Intro
       </button>
