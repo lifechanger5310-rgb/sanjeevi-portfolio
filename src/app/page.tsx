@@ -1,9 +1,11 @@
+import KineticIntro from "@/components/KineticIntro";
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import AiMatrix from "@/components/AiMatrix";
 
-const sections = [
-  { id: "projects", label: "projects", phase: 3 },
-  { id: "ai-matrix", label: "ai-matrix", phase: 2 },
+const placeholders = [
   { id: "experience", label: "experience", phase: 3 },
+  { id: "projects", label: "projects", phase: 3 },
   { id: "skills", label: "skills", phase: 4 },
   { id: "contact", label: "contact", phase: 4 },
 ];
@@ -11,9 +13,12 @@ const sections = [
 export default function Home() {
   return (
     <>
+      <KineticIntro />
       <Navbar />
       <main className="mx-auto w-full max-w-6xl flex-1 px-4 sm:px-6">
-        {sections.map((s) => (
+        <Hero />
+        <AiMatrix />
+        {placeholders.map((s) => (
           <section
             key={s.id}
             id={s.id}
